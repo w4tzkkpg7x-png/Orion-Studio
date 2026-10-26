@@ -62,7 +62,7 @@ Module Main
 module Main
 use Console::Orion
 
-func greet(str nama) -> str -> {
+func greet(str nama) -> str {
     return("Salve, " nama);
 }
 

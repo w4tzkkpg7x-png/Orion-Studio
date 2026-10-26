@@ -241,7 +241,7 @@ contoh yang benar:
 entry main() {
     let x = 10;
 
-    if (x > 5) -> {
+    if (x > 5) {
         let y = 20;
         Console::println(x + y);
     }

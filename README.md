@@ -1,10 +1,10 @@
 # Orion-Studio
 Orion (Which stands for Ontological Rapid-Instruction Object-Network) is a unique project designed not to replace existing programming language from scratch, but rather to serve as a piece of art. Its core purpose is to simplify rigid programming language by infusing them with philosophical nuances, and similiar like C programming language.
 
-===============================================================
+===========================
+
 
 # Orion - VerCode: Briar - VerNum: v2.0.0 - Creator: Mahad
-
 ## Spesifikasi formal untuk EBNF Orion
 - = : definisi aturan
 - , = konkatenasi
@@ -63,7 +63,7 @@ module Main
 use Console::Orion
 
 func greet(str nama) -> str {
-    return("Salve, " nama);
+    return("Salve, " + nama);
 }
 
 entry main() {
@@ -123,7 +123,7 @@ entry main() {
             }
         } else if (inputUser == "umur") {
             for (int i = 0; i < 5; i++) {
-                Console::println("Umur siswa ke-" i " : " umurSiswa[i]);
+                Console::println("Umur siswa ke-" + i + " : " + umurSiswa[i]);
             }
         }
     }
@@ -222,10 +222,10 @@ entry main() {
     let umur = to_int(inputUmur);
 
     if (umur >= 17) {
-        Console::println("Selamat " nama ", Anda sudah berhak memiliki SIM");
+        Console::println("Selamat " + nama + ", Anda sudah berhak memiliki SIM");
     } else {
         let sisaTahun = 17 - umur;
-        Console::println("Maaf " nama ", Anda harus menunggu " sisaTahun " tahun lagi.");
+        Console::println("Maaf " + nama + ", Anda harus menunggu " + sisaTahun + " tahun lagi.");
     }
 }
 
